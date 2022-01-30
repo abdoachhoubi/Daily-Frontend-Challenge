@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange-card: hsl(31, 77%, 52%);
+    --cyan-card: hsl(184, 100%, 22%);
+    --darkcyan-card: hsl(179, 100%, 13%);
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 100%);
+    margin: 36px 0;
+}
+
+header{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card{
+    background-color: var(--orange-card);
+    padding: 36px 24px 36px 36px;
+}
+
+.card p{
+    margin-bottom: 82px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.8);
+}
+
+.o{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.c{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.dc{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card button{
+    padding: 14px 32px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    border: 1.5px solid transparent;
+    transition-duration: 300ms;
+}
+
+.card button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: 1.5px solid hsl(0, 0%, 100%);
+}
+
+.bo{
+    color: hsl(31, 77%, 52%);
+}
+
+.bc{
+    color: hsl(184, 100%, 22%);
+}
+
+.bdc{
+    color: hsl(179, 100%, 13%);
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.attribution{
+    font-size: 14px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    color: hsl(179, 100%, 13%);
+}
+    
+.attribution a {
+    color: hsl(184, 100%, 22%);
+    font-weight: 700;
+    text-decoration: none;
+    transition-duration: 300ms;
+}
+
+.attribution a:hover{
+    color: hsl(31, 77%, 52%);
+}
+
+@media (max-width: 1100px) {
+    header{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    body{
+        background-color: hsl(0, 0%, 100%);
+        height: auto;
+        padding: 32px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        position:static;
+        margin-top: 32px;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card p{
+        width: 80%;
+        margin-bottom: 82px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: hsla(0, 0%, 100%, 0.8);
+    }
+}
