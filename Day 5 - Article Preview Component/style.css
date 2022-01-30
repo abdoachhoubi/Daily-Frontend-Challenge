@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    background-color: #FFFFFF;
+    width: 64%;
+    display: flex;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 12px 16px -10px hsla(217, 19%, 35%, 0.3); 
+    box-shadow: 0px 12px 16px -10px hsla(217, 19%, 35%, 0.3);
+}
+
+.cover{
+    width: 40%;
+    height: auto;
+    border-radius: 12px 0 0 12px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 36px 52px;
+    position: relative;
+    overflow: visible;
+}
+
+.heading{
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+
+
+.paragraph{
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: hsl(214, 17%, 51%);
+    font-weight: 700;
+}
+
+.profile{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name{
+    width: fit-content;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.un{
+    font-size: 16px;
+    color: hsl(217, 19%, 35%);
+}
+
+.ud{
+    font-size: 12px;
+    color: hsl(214, 17%, 51%);
+}
+
+.profile__img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 12px;
+}
+
+.share__icon__d{
+    padding: 8px;
+    height: 30px;
+    width: auto;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 15px;
+    overflow: visible;
+}
+
+.share__icon__m{
+    display: none;
+}
+
+
+.desktop{
+    z-index: 100 !important;
+    position: absolute;
+    bottom: 24%;
+    right: -7%;
+    width: 200px;
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 36px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 12px 16px -10px hsla(217, 19%, 35%, 0.7); 
+    box-shadow: 0px 12px 16px -10px hsla(217, 19%, 35%, 0.7);
+}
+
+.none{
+    display: none;
+}
+
+.share__txt{
+    font-size: 12px;
+    margin-right: 8px;
+    color: hsla(210, 46%, 95%, 0.7);
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.share__icons__s{
+    width: 16px;
+    height: auto;
+    margin-left: 12px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    color: hsl(217, 19%, 35%);
+}
+    
+.attribution a {
+    color: hsl(214, 17%, 51%);
+    font-weight: 700;
+    text-decoration: none;
+    transition-duration: 300ms;
+}
+
+.attribution a:hover{
+    color: hsl(212, 59%, 68%);
+}
+
+
+@media (max-width: 375px) {
+    header{
+        flex-direction: column;
+        width: 90%;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    body{
+        height: auto;
+    }
+
+    .cover{
+        width: 100%;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0px;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .heading{
+        font-size: 18px;
+    }
+
+    .paragraph{
+        font-size: 12px;
+    }
+
+    .content{
+        padding: 36px 24px;
+    }
+
+    .share__icon__d{
+        display: none;
+    }
+
+    .share__icon__m{
+        display: block;
+        padding: 8px;
+        height: 30px;
+        width: auto;
+        background-color: hsl(210, 46%, 95%);
+        border-radius: 15px;
+        overflow: visible;
+    }
+    
+    .share__icon__mv{
+        display: block;
+        padding: 8px;
+        height: 30px;
+        width: auto;
+        background-color: hsl(210, 46%, 95%);
+        border-radius: 16px;
+        overflow: visible;
+    }
+
+    .mobile{
+        width: 100%;
+        background-color: hsl(217, 19%, 35%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 16px 32px;
+        border-radius: 0 0 12px 12px;
+        
+    }
+
+    .share__icons{
+        display: flex;
+        align-items: center
+    }
+
+    .share__icons__s{
+        width: 18px;
+    }
+
+    .none{
+        display: none;
+    }
+}
