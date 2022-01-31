@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color-: rgb(106, 90, 205);
+    --secondary-color-: rgb(134, 125, 197);
+    --white-color-: #ffffff;
+}
+
+body{
+    background-color: var(--main-color-);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: var(--white-color-);
+    width: 40%;
+    height: fit-content;
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.new__task{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .new__task input{
+    width: 78%;
+    outline: none;
+    border: 1.6px solid var(--main-color-);
+    color: var(--main-color-);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.error{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: rgb(255, 94, 94);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.none{
+    display: none;
+}
+
+.container .new__task button{
+    padding: 8px 8px;
+    width: 20%;
+    background-color: var(--main-color-);
+    outline: none;
+    border: none;
+    color: var(--white-color-);
+    border-radius: 4px;
+}
+
+::placeholder{
+    color: var(--secondary-color-);
+}
+
+.tasks{
+    border-radius: 6px;
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--main-color-);
+    padding: 26px 18px;
+    margin-top: 12px;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.task{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: var(--main-color-);
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+}
+
+.paragraph{
+    width: 78%;
+    font-size: 14px;
+    color: var(--white-color-);
+}
+
+.task button{
+    background-color: var(--white-color-);
+    color: var(--main-color-);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    width: 20%;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color-);
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    body{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    }
+
+    .container{
+        background-color: var(--white-color-);
+        width: 90%;
+        height: fit-content;
+        padding: 16px;
+        border-radius: 8px;
+    }
+}
