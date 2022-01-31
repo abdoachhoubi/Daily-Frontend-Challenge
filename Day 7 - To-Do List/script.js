@@ -2,12 +2,10 @@ let addtask = document.querySelector("#push");
 let target = document.querySelector(".tasks");
 let content = document.querySelector("#task__value");
 let err = document.querySelector(".error");
-let arr = {};
 let keys = [];
 
 addtask.addEventListener("click", function(){
     if (content.value !== ""){
-        arr[content.value] = content.value;
         keys.push(content.value);
         window.localStorage.setItem("keys", keys);
         window.localStorage.setItem(content.value, content.value);
