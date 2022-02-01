@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Spartan', sans-serif;
+}
+
+#pt-d{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+#pb-d{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#pt-m , #pb-m{
+    display: none;
+}
+
+header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+footer{
+    position: absolute;
+}
+
+.sec-h{
+    width: 50%;
+}
+
+.lv1-h{
+    color: hsl(300, 43%, 22%);
+    font-size: 42px;
+    font-weight: 700;
+    width: 80%;
+    margin-bottom: 16px;
+}
+
+.lv1-hero{
+    width: 80%;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(303, 10%, 53%);
+}
+
+.flex-v{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.c{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: hsl(300, 13%, 86%);
+}
+
+.left , .top{
+    align-self: flex-start;
+}
+
+.center{
+    align-self: center;
+}
+
+.right , .bottom{
+    align-self: flex-end;
+}
+
+.stars{
+    margin-right: 16px;
+    width: 36%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 16px;
+}
+
+.bold{
+    color: hsl(300, 43%, 22%);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+main{
+    height: 34%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    width: 1fr;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    background-color: hsl(300, 43%, 22%);
+    width: 90%;
+    border-radius: 6px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.rounded{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.lv2-h{
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.lv2-subh{
+    color: hsla(333, 80%, 67%, 0.8);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.lv2-hero{
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.medium{
+    font-weight: 500;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.attribution{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: hsl(0, 0%, 79%);
+}
+    
+.attribution a {
+    color: hsl(0, 0%, 79%);
+    font-weight: 700;
+    text-decoration: none;
+    transition-duration: 300ms;
+}
+
+.attribution a:hover{
+    color: hsl(300, 43%, 22%);
+}
+
+@media (max-width: 1100px){
+    .lv1-h{
+        font-size: 36px;
+    }
+
+    .lv1-hero{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .lv2-h{
+        font-size: 14px;
+    }
+
+    .lv2-hero{
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .card{
+        width: 96%;
+    }
+}
+
+@media (max-width: 900px){
+
+    body{
+        width: 100%;
+        height: fit-content;
+        padding: 16px 0;
+        overflow: auto;
+    }
+
+    #pt-m{
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+    }
+    
+    #pb-m{
+        display: block;
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        right: 0;
+    }
+    
+    #pt-d , #pb-d{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec-h{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lv1-h{
+        padding: 0 28px 0 28px;
+        font-size: 36px;
+        margin-bottom: 22px;
+        margin-top: 36px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .lv1-hero{
+        width: 100%;
+        padding: 0 28px 0 28px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    .flex-v{
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .c{
+        position: relative;
+        background-color: hsl(300, 71%, 97%);
+        width: 90%;
+        height: 80px;
+        margin-bottom: 16px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bold{
+        margin: 0;
+        color: hsl(300, 43%, 22%);
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .stars{
+        padding: 0;
+        margin: 0;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .left{
+        align-self: center;
+    }
+    
+    .right{
+        align-self: center;
+    }
+
+    main{
+        margin-top: 24px;
+        height:fit-content;
+        width: 90%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .container{
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 18px;
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        background-color: hsl(300, 43%, 22%);
+        width: 100%;
+        height: fit-content;
+        border-radius: 6px;
+    }
+    
+    .profile{
+        display: flex;
+        align-items: center;
+        margin-bottom: 22px;
+    }
+    
+    .rounded{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+    
+    .lv2-h{
+        color: hsl(0, 0%, 100%);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    
+    .lv2-subh{
+        color: hsla(333, 80%, 67%, 0.8);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    
+    .lv2-hero{
+        margin-top: 16px;
+        color: hsl(0, 0%, 100%);
+        font-size: 15px;
+        line-height: 26px;
+    }
+    
+    .medium{
+        font-weight: 300;
+    }
+
+    
+    footer{
+        position: static;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
