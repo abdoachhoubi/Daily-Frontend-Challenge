@@ -1,0 +1,317 @@
+:root {
+  /* Colors */
+  --primary: hsl(0, 100%, 74%);
+  --secondry: hsl(154, 59%, 51%);
+  --seclight: hsl(154, 59%, 61%);
+  --accent: hsl(248, 32%, 49%);
+  --dark: hsl(249, 10%, 26%);
+  --gryish: hsl(246, 25%, 77%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary);
+  font-family: sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/bg-intro-desktop.png);
+}
+
+header {
+  width: 40%;
+  margin-right: 24px;
+}
+
+header a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 52px;
+  line-height: 46px;
+  font-weight: 800;
+}
+
+header p {
+  width: 90%;
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  margin-top: 32px;
+  line-height: 22px;
+  cursor: default;
+}
+
+section {
+  width: 30%;
+  margin-left: 24px;
+}
+
+section .trial {
+  width: 100%;
+  background-color: var(--accent);
+  height: 48px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+section .trial p {
+  color: hsl(0, 0%, 100%);
+}
+
+section .trial p span {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+section .sign {
+  padding: 24px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+}
+
+section .sign .input {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  height: 40px;
+  border: 1px solid var(--gryish);
+  border-radius: 4px;
+  width: 100%;
+}
+
+section .sign .focus {
+  border: 1px solid var(--dark);
+}
+
+section .sign .input input {
+  background-color: transparent;
+  font-size: 12px;
+  color: var(--dark);
+  outline: none;
+  border: none;
+  padding: 8px;
+  flex-grow: 1;
+}
+
+section .sign .input img {
+  width: 16px;
+  height: 16px;
+}
+
+section .sign button {
+  height: 42px;
+  width: 100%;
+  background-color: var(--secondry);
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 12px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 400ms;
+}
+
+section .sign button:hover {
+  background-color: var(--seclight);
+}
+
+section .sign p {
+  font-size: 10px;
+  color: var(--gryish);
+  width: 100%;
+  text-align: center;
+  cursor: default;
+}
+
+section .sign p span {
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section .sign .error {
+  font-size: 10px;
+  color: var(--primary);
+  width: 100%;
+  text-align: end;
+  cursor: default;
+  margin-bottom: 16px;
+}
+
+section .sign .input_error {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 40px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    width: 40%;
+    margin-right: 24px;
+  }
+
+  section {
+    width: 40%;
+    margin-left: 24px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-intro-mobile.png);
+  }
+
+  header {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 60%;
+    margin-left: 0px;
+  }
+
+  header a,
+  header p {
+    text-align: center;
+  }
+
+  header a {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  header p {
+    width: 80%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    width: 70%;
+    margin-right: 0;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 66%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: fit-content;
+  }
+
+  main {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-intro-mobile.png);
+    padding: 64px 0px;
+  }
+
+  header {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    width: 96%;
+    margin-right: 0;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 90%;
+  }
+  header a,
+  header p {
+    text-align: center;
+  }
+
+  header a {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  header p {
+    width: 80%;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+
+  section .trial {
+    height: fit-content;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section .trial p {
+    text-align: center;
+    font-size: 13px;
+    width: 80%;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+}

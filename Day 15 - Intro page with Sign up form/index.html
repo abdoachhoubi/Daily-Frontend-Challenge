@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="">Learn to code by watching others</a>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <section>
+        <div class="trial">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <div class="sign">
+          <div class="input">
+            <input type="text" id="first_name" placeholder="First Name" />
+            <img class="hidden" src="images/icon-error.svg" alt="error" />
+          </div>
+          <p class="error hidden">First Name cannot be empty</p>
+          <div class="input">
+            <input type="text" id="last_name" placeholder="Last Name" />
+            <img class="hidden" src="images/icon-error.svg" alt="error" />
+          </div>
+          <p class="error hidden">Last Name cannot be empty</p>
+          <div class="input">
+            <input type="email" id="email" placeholder="Email Address" />
+            <img class="hidden" src="images/icon-error.svg" alt="error" />
+          </div>
+          <p class="error hidden">Looks like this is not an email</p>
+          <div class="input">
+            <input type="password" id="password" placeholder="Password" />
+            <img class="hidden" src="images/icon-error.svg" alt="error" />
+          </div>
+          <p class="error hidden">Password cannot be empty</p>
+
+          <button>CLAIM YOUR FREE TRIAL</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
