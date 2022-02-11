@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assets/Favicon/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="Style/normalize.css" />
+    <link rel="stylesheet" href="Style/main.css" />
+
+    <title>Base Apparel</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="desktop">
+        <div class="container">
+          <div class="container__logo">
+            <img src="Assets/Icons/logo.svg" alt="logo" class="logo" />
+          </div>
+          <div class="container__heading">
+            <h1 class="h thin">WE'RE</h1>
+            <h1 class="h medium">COMING<br />SOON</h1>
+            <p class="hero small regular">
+              Hello fellow shoppers! We're currently building our new<br />
+              fashion store. Add your email below to stay up-to-date with<br />
+              announcements and our launch deals.
+            </p>
+            <div class="cta">
+              <input type="email" id="email__dsk" placeholder="Email Address" />
+              <img
+                class="error__icon hidden"
+                src="Assets/Icons/icon-error.svg"
+                alt=""
+              />
+              <button class="cta__send" id="btn">
+                <img src="Assets/Icons/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+            <p class="error__text hidden">Please provide a valid email</p>
+          </div>
+        </div>
+        <div class="cover">
+          <img
+            class="cover__desktop"
+            src="Assets/Images/hero-desktop.jpg"
+            alt="cover"
+          />
+        </div>
+      </div>
+
+      <div class="mobile">
+        <div class="header">
+          <img src="Assets/Icons/logo.svg" alt="logo" class="logo" />
+          <img
+            class="cover__mobile"
+            src="Assets/Images/hero-mobile.jpg"
+            alt="cover"
+          />
+        </div>
+        <div class="container">
+          <h1 class="h thin">WE'RE</h1>
+          <h1 class="h medium">COMING<br />SOON</h1>
+          <p class="hero small regular">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+
+          <div class="cta cta2">
+            <input type="email" id="email" placeholder="Email Address" />
+            <img
+              class="error__icon hidden"
+              src="Assets/Icons/icon-error.svg"
+              alt=""
+            />
+            <button class="cta__send" id="btn2">
+              <img src="Assets/Icons/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+          <p class="error__text hidden">Please provide a valid email</p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

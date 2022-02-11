@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;600;700&display=swap");
+
+:root {
+  /* Colors */
+  --primary: hsl(0, 36%, 70%);
+  --secondary: hsl(0, 93%, 68%);
+  --neutral: hsl(0, 6%, 24%);
+  --gradient1: 135deg, hsl(0, 100%, 97%), hsl(0, 59%, 86%);
+  --gradient2: 135deg, hsl(0, 77%, 88%), hsl(0, 74%, 74%);
+
+  /* Font Size */
+
+  --h-desktop: 48px;
+  --h-mobile: ;
+  --hero-desktop: 16px;
+  --hero-mobile: ;
+
+  /* Font Weight */
+
+  --thin: 200;
+  --regular: 400;
+  --medium: 600;
+}
+
+main {
+  background-image: url(../Assets/Images/bg-pattern-desktop.svg);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.desktop {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+.cover {
+  width: 40%;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  image-rendering: auto;
+}
+
+.container {
+  position: relative;
+  width: calc(60% - 128px);
+  height: 100%;
+  padding-left: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  position: fixed;
+  top: 64px;
+  height: 30px;
+  width: auto;
+}
+
+.h {
+  font-size: var(--h-desktop);
+  letter-spacing: 16px;
+  color: var(--neutral);
+}
+
+.thin {
+  font-weight: var(--thin);
+  line-height: 0px;
+  color: var(--primary);
+}
+
+.medium {
+  font-weight: var(--medium);
+}
+
+.regular {
+  font-weight: var(--regular);
+}
+
+.hero {
+  font-size: var(--hero-desktop);
+  color: var(--primary);
+  line-height: 24px;
+}
+
+.cta {
+  width: 60%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+  border-radius: 50px;
+  position: relative;
+  border: 2px solid var(--primary);
+}
+
+.cta__error {
+  width: 60%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+  border-radius: 50px;
+  position: relative;
+  border: 2px solid var(--secondary);
+}
+
+#email__dsk {
+  flex-grow: 1;
+  margin-left: 16px;
+  background-color: transparent;
+  font-size: 14px;
+  color: var(--neutral);
+}
+
+#email {
+  flex-grow: 1;
+  margin-left: 16px;
+  background-color: transparent;
+  font-size: 14px;
+  color: var(--neutral);
+}
+
+.error__icon {
+  margin-right: 100px;
+}
+
+.cta__send {
+  position: absolute;
+  right: -10px;
+  height: 54px;
+  padding-left: 38px;
+  padding-right: 38px;
+  background-image: linear-gradient(var(--gradient2));
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 22px 25px 16px -26px transparent;
+  -webkit-box-shadow: 22px 25px 16px -26px transparent;
+  -moz-box-shadow: 22px 25px 16px -26px transparent;
+  transition-duration: 400ms;
+}
+
+.cta__send:hover {
+  background-image: linear-gradient(var(--gradient1));
+  box-shadow: 22px 25px 16px -22px rgba(184, 156, 156, 0.65);
+  -webkit-box-shadow: 22px 25px 16px -22px rgba(184, 156, 156, 0.65);
+  -moz-box-shadow: 22px 25px 16px -22px rgba(184, 156, 156, 0.65);
+}
+
+.error__text {
+  color: var(--secondary);
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    background-color: #fff;
+    background-image: none;
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    position: relative;
+    top: unset;
+    height: unset;
+    width: 26%;
+    margin: 32px;
+  }
+
+  .container {
+    position: relative;
+    width: calc(100% - 24px);
+    height: auto;
+    padding: 64px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h {
+    text-align: center;
+  }
+
+  .medium {
+    margin-top: -10px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .cta {
+    width: 90%;
+    border: 1px solid var(--primary);
+  }
+
+  .cta__error {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    border-radius: 50px;
+    position: relative;
+    border: 2px solid var(--secondary);
+  }
+
+  .error__text {
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}
